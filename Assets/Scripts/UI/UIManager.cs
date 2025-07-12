@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -26,6 +26,15 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.ChangeState(GameManager.GameState.MainMenu);
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void LoadSoroll()
+    {
+        Debug.Log("🔁 UIManager: carregant escena 'Soroll'");
+        GameManager.Instance.ChangeState(GameManager.GameState.Training); // o el que toqui
+        SceneManager.LoadScene("Soroll");
+    }
+
+
 
     public void QuitGame()
     {

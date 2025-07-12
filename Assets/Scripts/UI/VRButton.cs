@@ -7,6 +7,7 @@ public class VRButton : MonoBehaviour
         LoadProfile,
         LoadExplore,
         LoadTrain,
+        LoadSoroll,
         LoadMainMenu,
         QuitGame
     }
@@ -36,6 +37,10 @@ public class VRButton : MonoBehaviour
             case ButtonAction.LoadMainMenu:
                 ui.LoadMainMenu();
                 break;
+            case ButtonAction.LoadSoroll:
+                ui.LoadSoroll();
+                break;
+
             case ButtonAction.QuitGame:
                 ui.QuitGame();
                 break;

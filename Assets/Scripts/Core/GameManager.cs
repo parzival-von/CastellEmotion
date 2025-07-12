@@ -19,12 +19,14 @@ public class GameManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject); // Evita duplicats
+            Debug.LogWarning("♻️ GameManager duplicat destruït a escena: " + gameObject.name);
+            Destroy(gameObject);
             return;
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject); // Persistència entre escenes
+        DontDestroyOnLoad(gameObject);
+        Debug.Log("✅ GameManager persistent inicialitzat");
     }
 
     public void ChangeState(GameState newState)
