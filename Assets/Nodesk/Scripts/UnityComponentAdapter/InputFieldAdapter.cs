@@ -4,7 +4,9 @@
 
 using Nodesk.Scripts.Core;
 using Nodesk.Scripts.Core.Converter;
-using OVR.OpenVR;
+/*using OVR.OpenVR;
+*/
+
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
