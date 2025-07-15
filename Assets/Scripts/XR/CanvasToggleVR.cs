@@ -1,38 +1,49 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.XR.Interaction.Toolkit;
 
-public class CanvasToggleVR : MonoBehaviour
+public class CanvasToggleVRMulti : MonoBehaviour
 {
-    [Header("Input Action")]
-    public InputActionReference toggleAction;
+    [Header("Input Actions")]
+    public InputActionReference toggleCanvasY;
+    public InputActionReference toggleCanvasX;
 
-    [Header("Canvas to Toggle")]
-    public GameObject canvasObject;
+    [Header("Canvas Objects")]
+    public GameObject canvasY;
+    public GameObject canvasX;
 
     private void OnEnable()
     {
-        if (toggleAction != null)
+        if (toggleCanvasY != null)
         {
-            toggleAction.action.performed += ToggleCanvas;
-            toggleAction.action.Enable();
+            toggleCanvasY.action.performed += ctx => ToggleCanvas(canvasY);
+            toggleCanvasY.action.Enable();
+        }
+
+        if (toggleCanvasX != null)
+        {
+            toggleCanvasX.action.performed += ctx => ToggleCanvas(canvasX);
+            toggleCanvasX.action.Enable();
         }
     }
 
     private void OnDisable()
     {
-        if (toggleAction != null)
+        if (toggleCanvasY != null)
         {
-            toggleAction.action.performed -= ToggleCanvas;
-            toggleAction.action.Disable();
+            toggleCanvasY.action.performed -= ctx => ToggleCanvas(canvasY);
+            toggleCanvasY.action.Disable();
+        }
+
+        if (toggleCanvasX != null)
+        {
+            toggleCanvasX.action.performed -= ctx => ToggleCanvas(canvasX);
+            toggleCanvasX.action.Disable();
         }
     }
 
-    private void ToggleCanvas(InputAction.CallbackContext context)
+    private void ToggleCanvas(GameObject canvas)
     {
-        if (canvasObject != null)
-        {
-            canvasObject.SetActive(!canvasObject.activeSelf);
-        }
+        if (canvas != null)
+            canvas.SetActive(!canvas.activeSelf);
     }
 }

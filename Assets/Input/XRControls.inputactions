@@ -2,11 +2,11 @@
     "name": "XRControls",
     "maps": [
         {
-            "name": "XR",
+            "name": "ActivarCanvasY",
             "id": "b11cc2b7-f202-4282-9a12-7320661ce10a",
             "actions": [
                 {
-                    "name": "ActivarCanvas",
+                    "name": "ActivarCanvasRelax",
                     "type": "Button",
                     "id": "0651ae68-3e70-475f-8ca3-73079669b1df",
                     "expectedControlType": "",
@@ -19,11 +19,39 @@
                 {
                     "name": "",
                     "id": "788ffbff-cc1a-42da-984d-693827978082",
-                    "path": "<OculusTouchController>/secondaryButton",
+                    "path": "<XRController>{LeftHand}/{SecondaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ActivarCanvas",
+                    "action": "ActivarCanvasRelax",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ActivarCanvasX",
+            "id": "45128f55-6114-479f-988b-06dbdb658eea",
+            "actions": [
+                {
+                    "name": "CanvasFormacion",
+                    "type": "Button",
+                    "id": "500e06f4-eed7-41f1-b6a6-2aee92c2a10d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "46e990ad-6018-4356-bfe2-1b3789ebb0ba",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CanvasFormacion",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
