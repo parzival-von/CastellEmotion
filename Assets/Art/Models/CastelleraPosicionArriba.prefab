@@ -5668,7 +5668,7 @@ Transform:
   m_GameObject: {fileID: 7302214637858423672}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000037748947, y: 3.67342e-40, z: -1.3877788e-17, w: 1}
-  m_LocalPosition: {x: 0, y: 0.011, z: -0.09}
+  m_LocalPosition: {x: -0, y: 0.46, z: -0.09}
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5694,14 +5694,14 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -9004291892747248138, guid: 014f1c8a70400c24e8364d3c39243047, type: 3}
-  - {fileID: -1807261416320584988, guid: 014f1c8a70400c24e8364d3c39243047, type: 3}
-  - {fileID: 1463529097495429148, guid: 014f1c8a70400c24e8364d3c39243047, type: 3}
-  - {fileID: -6202527644641842130, guid: 014f1c8a70400c24e8364d3c39243047, type: 3}
-  - {fileID: -5465222906117718275, guid: 014f1c8a70400c24e8364d3c39243047, type: 3}
-  - {fileID: -5252993902675560764, guid: 014f1c8a70400c24e8364d3c39243047, type: 3}
-  - {fileID: 315788783875636427, guid: 014f1c8a70400c24e8364d3c39243047, type: 3}
-  - {fileID: -1845332498448955105, guid: 014f1c8a70400c24e8364d3c39243047, type: 3}
+  - {fileID: 2100000, guid: 07a45d90b2d1a244e9950efc0a8f7c52, type: 2}
+  - {fileID: 2100000, guid: 623a93151a064c8479cc20896b8a383d, type: 2}
+  - {fileID: 2100000, guid: ec10419ffb4d4d14fb5c82f07525f37b, type: 2}
+  - {fileID: 2100000, guid: 0d206c29e00ccc241afa4f98e22b0265, type: 2}
+  - {fileID: 2100000, guid: 623a93151a064c8479cc20896b8a383d, type: 2}
+  - {fileID: 2100000, guid: fb43e077c607cc345aab01ddd7589920, type: 2}
+  - {fileID: 2100000, guid: 02f96eaf7dc3e384aaff38afeea845b7, type: 2}
+  - {fileID: 2100000, guid: 6323641b1f99f134d9b2305240e69b22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

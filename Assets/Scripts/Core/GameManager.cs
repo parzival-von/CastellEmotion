@@ -17,16 +17,9 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Debug.LogWarning("♻️ GameManager duplicat destruït a escena: " + gameObject.name);
-            Destroy(gameObject);
-            return;
-        }
-
+        // Cada escena tendrá su propio GameManager independiente
         Instance = this;
-        DontDestroyOnLoad(gameObject);
-        Debug.Log("✅ GameManager persistent inicialitzat");
+        Debug.Log("🧩 GameManager de escena inicialitzat: " + gameObject.scene.name);
     }
 
     public void ChangeState(GameState newState)
@@ -34,23 +27,17 @@ public class GameManager : MonoBehaviour
         CurrentState = newState;
         Debug.Log("Nou estat del joc: " + newState.ToString());
 
-        // Aquí pots afegir accions específiques per cada estat
         switch (newState)
         {
             case GameState.MainMenu:
-                // Accions específiques per MainMenu
                 break;
             case GameState.Profile:
-                // Carregar dades de perfil
                 break;
             case GameState.ExploringLimits:
-                // Preparar simulacions
                 break;
             case GameState.Training:
-                // Preparar escena d'entrenament
                 break;
             case GameState.Paused:
-                // Pausar simulació
                 break;
         }
     }

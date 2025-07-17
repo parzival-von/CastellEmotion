@@ -3,7 +3,6 @@
 public class CamisaStartupLoader : MonoBehaviour
 {
     public CamisaColorGlobalManager camisaManager;
-    public string nomMaterialCamisa = "shirt_SHD2";
 
     void Start()
     {
@@ -17,7 +16,6 @@ public class CamisaStartupLoader : MonoBehaviour
 
         if (collaIndex >= 0 && collaIndex < colors.Length && camisaManager != null)
         {
-            camisaManager.nomMaterialCamisa = nomMaterialCamisa;
             camisaManager.CanviarColorCamises(colors[collaIndex]);
         }
         else

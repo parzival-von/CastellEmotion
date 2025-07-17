@@ -3,10 +3,50 @@ guid: 014f1c8a70400c24e8364d3c39243047
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Faixa
+    second: {fileID: 2100000, guid: fb43e077c607cc345aab01ddd7589920, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: beard_SHD1
+    second: {fileID: 2100000, guid: 02f96eaf7dc3e384aaff38afeea845b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair_SHD
+    second: {fileID: 2100000, guid: 623a93151a064c8479cc20896b8a383d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair_SHD2
+    second: {fileID: 2100000, guid: 806e1ada5dd4183498c86b1e444c1db3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pants_SHD1
+    second: {fileID: 2100000, guid: 0d206c29e00ccc241afa4f98e22b0265, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt_SHD2
+    second: {fileID: 2100000, guid: 07a45d90b2d1a244e9950efc0a8f7c52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin_SHD1
+    second: {fileID: 2100000, guid: ec10419ffb4d4d14fb5c82f07525f37b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tie_SHD1
+    second: {fileID: 2100000, guid: 6323641b1f99f134d9b2305240e69b22, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
+    materialName: 2
     materialSearch: 1
     materialLocation: 1
   animations:
